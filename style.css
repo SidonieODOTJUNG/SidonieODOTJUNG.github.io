@@ -1,0 +1,89 @@
+
+/* 
+deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. 
+Sur ce support, tu es libre de faire les adaptations nécessaires avec la mise en page, 
+tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. 
+Je te laisse choisir les breakpoints appropriés.
+*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.checked, .blue {
+    color : #0065FC;
+}
+
+.starbackground  {
+    color : #F2F2F2;
+}
+
+.articlesbackground {
+    background-color: white;
+}
+
+.sectionsbackground {
+    background-color: #f2f2f2;
+}
+
+.container-filter {
+    border: 0.5mm solid violet;
+    display: flex;
+}
+.container-inline {
+    border: 0.5mm solid rgb(136, 29, 136);
+    display: inline-flex;
+    padding: 10px;
+}
+
+
+/* les icones */
+
+i {
+    align-self: center;
+    border: solid 1mm black;
+}
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.filter-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color:#0065FC ;
+    background-color: #DEEBFF;
+}
+
+.info-icon {
+    color:#0065FC ;
+}
+
+
+
+/* vérif les dimensions pour iphone 8 */
+/* petit mobiles */
+@media screen and (max-width:770px) {
+}
+
+/* mobiles et tablettes */
+@media screen and (max-width:1023px) {
+    
+}
+
+/* tablettes */
+@media screen and (max-width:1023px) and (min-width:770px) {
+    
+}
+
+/* desktop et ecrans larges (vérif si encore besoin)*/
+@media screen and (min-width:1024px) {
+
+    .container-articles {
+        display: flex;
+    }
+    
+    
+}
