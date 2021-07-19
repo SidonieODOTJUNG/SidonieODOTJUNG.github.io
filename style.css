@@ -87,3 +87,11 @@ i {
     
     
 }
+
+
+/* flexbox */
+
+.container-articles{
+    display: flex;
+    justify-content: space-around;
+}
