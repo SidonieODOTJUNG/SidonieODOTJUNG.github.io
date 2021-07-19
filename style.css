@@ -95,3 +95,9 @@ i {
     display: flex;
     justify-content: space-around;
 }
+
+.container-detail-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
