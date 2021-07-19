@@ -10,6 +10,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    margin-left: 2rem;
+}
 .checked, .blue {
     color : #0065FC;
 }
@@ -47,13 +51,17 @@ body {
 }
 
 .container-filter {
-    border: 0.5mm solid violet;
     display: flex;
+    padding: 0.5rem;
 }
 .container-inline {
-    border: 0.5mm solid rgb(136, 29, 136);
-    display: inline-flex;
-    padding: 10px;
+    border: 0.5mm solid #f2f2f2;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0 0.5rem 0 0.5rem; */
+    margin-left: 2rem;
+
 }
 
 .container-activities{
@@ -65,18 +73,29 @@ body {
 
 /* les icones */
 
-i {
-    align-self: center;
-}
-
-.search-icon {
+.container-search-item {
+    text-align: center;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: #DEEBFF;
+    border-radius: 15px 0 0 15px ;
+    background-color: #f2f2f2;
 }
 
-.filter-icon {
+.search-filter{
+    height: 100%;
+    text-align: center;
+    border: solid 0.5mm #f2f2f2;
+}
+
+.search-button{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+.container-filter-item {
+    text-align: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -84,7 +103,12 @@ i {
     background-color: #DEEBFF;
 }
 
+.container-filter-p {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
 .info-icon {
+    margin-right: 0.5rem;
     color:#0065FC ;
 }
 
@@ -255,5 +279,6 @@ footer{
 
 .footer{
     width: 40%;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
+
