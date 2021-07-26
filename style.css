@@ -83,11 +83,13 @@ header {
 
 .search-filter{
     height: 100%;
+    width: 230px;
     text-align: center;
     border: solid 0.5mm #f2f2f2;
 }
 
 .search-button{
+    width: 210px;
     padding: 1rem 0.5rem 1rem 0.5rem;
     background-color: #0065FC;
     border: none;
