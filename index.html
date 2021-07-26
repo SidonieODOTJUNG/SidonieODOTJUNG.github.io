@@ -7,7 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="CSS\mobil.css" media="screen and (max-width:730px)">
+    <link rel="stylesheet" href="CSS\desktop.css" media="screen and (min-width:1024px)">
+    
     <script src="https://kit.fontawesome.com/30cce85442.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
@@ -47,8 +51,12 @@
                 </div>
                 
                 <form>
-                    <input type="search" id="search" name="citysearch" class="search-filter" placeholder="Marseille,France" aria-label="Entrez la ville de votre choix pour effectuer une recherche" required/><input type="submit" name="buttonsearch" id="button" class="search-button" value="Rechercher">
+                    <div class="mobil-search-div">
+                        <input type="search" id="search" name="citysearch" class="search-filter" placeholder="Marseille,France" aria-label="Entrez la ville de votre choix pour effectuer une recherche" required/><button class="search-button-phone"><i class="fas fa-search"></i></button><input type="submit" name="buttonsearch" id="button" class="search-button" value="Rechercher">
+                    </div>
+                    
                 </form>
+
             </div>
             
 <!-- faire les filtres avec logo-->
@@ -56,7 +64,7 @@
 Les filtres ne seront pas fonctionnels pour cette version, 
 en revanche, il faut qu’ils changent d’apparence au survol.
 -->
-            <div class="container-filter">
+            <div class="container-filter container-filter-mobil">
                 <p class="filters">Filtres</p>
                 <div class="container-inline">
                     <div class="container-filter-item">
@@ -199,13 +207,13 @@ en revanche, il faut qu’ils changent d’apparence au survol.
         <div class="sectionsbackground sectionsbackground2">
             <div class="populartitle">
                 <h2>Les plus populaires</h2>
-                <i class="fas fa-lg fa-chart-line"></i>
+                <i class="fas fa-lg fa-chart-line chart-line-phone"></i>
             </div>
             <div class="container-detail-articles">
                 <article class="populararticlesbackground">
                     <img class="img-popular" src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Le soleil du matin">
                     <div class="secondsectionpopulararticle">
-                        <div class="populartext">
+                        <div>
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                         </div>
@@ -221,7 +229,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="populararticlesbackground ">
                     <img class="img-popular" src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Vue sur une chambre des chambres d'hôtes : Au coeur de l'eau">
                     <div class="secondsectionpopulararticle">
-                        <div class="populartext">
+                        <div>
                             <h3>Au cœur de l'eau <br>Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71€</p>
                         </div>
@@ -237,7 +245,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="populararticlesbackground ">
                     <img class="img-popular" src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Tout bleu et blanc">
                     <div class="secondsectionpopulararticle">
-                        <div class="populartext">
+                        <div>
                             <h3>Hôtel Tout bleu et blanc</h3>
                             <p>Nuit à partir de 68€</p>
                         </div>

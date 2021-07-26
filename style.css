@@ -161,7 +161,7 @@ header {
 
 /* vérif les dimensions pour iphone 8 */
 /* petit mobiles */
-@media screen and (max-width:770px) {
+@media screen and (max-width:730px) {
 }
 
 /* mobiles et tablettes */
@@ -172,11 +172,6 @@ header {
 /* tablettes */
 @media screen and (max-width:1023px) and (min-width:770px) {
     
-}
-
-/* desktop et ecrans larges (vérif si encore besoin)*/
-@media screen and (min-width:1024px) {
-   
 }
 
 
