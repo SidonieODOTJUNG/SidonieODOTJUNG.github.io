@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    margin-left: 2rem;
+    margin: 0 2rem 0 2rem ;
 }
 .checked, .blue {
     color : #0065FC;
@@ -55,12 +55,15 @@ header {
     padding: 0.5rem;
 }
 .container-inline {
-    border: 0.5mm solid #f2f2f2;
+    border: 1mm solid #f2f2f2;
     border-radius: 35px;
     display: flex;
     justify-content: space-around;
-    /* padding: 0 0.5rem 0 0.5rem; */
-    margin-left: 2rem;
+    margin-left: 3rem;
+    padding-right: 4.5rem;
+    position: relative;
+    z-index: 3;
+    
 
 }
 
@@ -71,7 +74,11 @@ header {
     margin: 2rem;
 }
 
-/* les icones */
+/* Mise en forme barre de recherche et filtres */
+
+.search-container{
+    margin-bottom: 1.5rem;
+}
 
 .container-search-item {
     text-align: center;
@@ -79,17 +86,23 @@ header {
     height: 50px;
     border-radius: 15px 0 0 15px ;
     background-color: #f2f2f2;
+    
 }
-
+.search-filter, .search-button, .filters{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
 .search-filter{
     height: 100%;
     width: 230px;
-    text-align: center;
     border: solid 0.5mm #f2f2f2;
+    color: black;
+    padding-left: 15px;
 }
 
 .search-button{
-    width: 210px;
+    width: 150px;
     padding: 1rem 0.5rem 1rem 0.5rem;
     background-color: #0065FC;
     border: none;
@@ -98,15 +111,27 @@ header {
 }
 .container-filter-item {
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     color:#0065FC ;
     background-color: #DEEBFF;
+    position: absolute;
+    z-index: 1;
+    left: -2px;
+    top: -2px;
+}
+
+.filter-items{
+    padding-top: 3px;
 }
 
 .container-filter-p {
     margin: 0 0.5rem 0 0.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    left: 3.5rem;
 }
 
 .info-icon {
@@ -155,7 +180,7 @@ header {
 }
 
 
-/* flexbox */
+/* flexbox hebergement et populaires*/
 
 .container-articles{
     display: flex;
@@ -173,14 +198,12 @@ header {
  width: 70%;
 }
 
-
 .sectionsbackground2{
 width: 30%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 }
-
 
 .populartitle{
     display: inline-flex;
@@ -210,10 +233,13 @@ justify-content: space-around;
 .popularstars{
     margin-bottom: 1rem;
 }
+
 .populartext{
 /* vérif si besoin de mise en forme après paufinage des dimensions de la section les plus populaires */
 }
 
+
+/* flexbox activités à Marseille */
 .activitiesarticles{
     display: flex;
     justify-content: space-between;
@@ -289,21 +315,25 @@ footer{
 .menu{
     display: flex;
     justify-content: space-between;
+
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
+
 }
 
 .ul-menu{
     list-style-type: none;
     display: flex;
     margin-right: 20px;
+
+    margin: auto;
 }
 
 .li-pages{
-    border-top: 2px solid #0065FC;
     padding: 1rem 1rem 0 1rem;
     text-align: center;
 }
@@ -311,9 +341,20 @@ footer{
 .pages-choice{
     display: inline-block;
     text-decoration: none;
+    color: black;
 }
-
 
 .inscription{
-    margin-top: 2rem;
+    color: #0065FC;
+    font-weight: bold;
+    padding:1.2rem 0 0 1rem;
 }
+
+.li-pages:hover{
+    border-top: 2px solid #0065FC;
+}
+
+.li-pages:hover a{
+    color: #0065FC;
+}
+
