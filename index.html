@@ -25,9 +25,6 @@
             <div class="img-reservia">
                 <img src="images/logo/Reservia.svg" alt="logo reservia">
             </div>
-            <!--
-            Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
-            -->
             <nav class="nav">
                 <ul class="ul-menu">
                     <li class="li-pages hostel-page"><a href="#herbergement" class="pages-choice">Hébergements</a></li>
@@ -40,12 +37,6 @@
         <div class="header-filters">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
-<!-- faire la barre de recherche  -->
-<!-- 
-    Les usagers pourront rechercher des hébergements dans la ville de leur choix. 
-    Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. 
-    En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
--->
             <div class="search-container">
                 <!-- placeholder à changer une fois ajax mis en place : Choisissez votre ville... 
                 -->
@@ -62,7 +53,7 @@
 
             </div>
             
-<!-- faire les filtres avec logo-->
+
 <!--
 Les filtres ne seront pas fonctionnels pour cette version, 
 en revanche, il faut qu’ils changent d’apparence au survol.
@@ -112,9 +103,9 @@ en revanche, il faut qu’ils changent d’apparence au survol.
 <!--
     Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
 -->
-    <section class="container-articles" id="herbergement">
-        <div class="sectionsbackground sectionsbackground1">
-            <div class="detailarticlestitle"></div>
+    <section class="container-articles" >
+        <div class="sectionsbackground sectionsbackground1" id="herbergement">
+            <div class="detailarticlestitle">
                 <h2>Hébergements à Marseille</h2>
             </div>
             
@@ -266,7 +257,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
             </div>
         </div>
     </section>
-
+    
     <section class="container-activities" id="activities">
         <div class="detailactivitytitle">
             <h2>Activités à Marseille</h2>

@@ -64,6 +64,11 @@ header {
     z-index: 3;
 }
 
+.container-inline:hover{
+    background-color: #f2f2f2;
+    color: #0065FC;
+}
+
 .container-activities{
     display: flex;
     justify-content: space-between;
@@ -178,6 +183,7 @@ header {
 
 .sectionsbackground1{
  width: 70%;
+ padding-top: 2rem;
 }
 
 .sectionsbackground2{
@@ -185,6 +191,10 @@ width: 30%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+}
+
+.chart-line-phone{
+    margin-top: 1.5rem;
 }
 
 .populartitle{
