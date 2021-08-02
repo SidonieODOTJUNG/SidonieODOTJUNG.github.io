@@ -27,7 +27,13 @@ header {
     box-shadow: 6px 6px 12px #c7c5c5;
 }
 
-.populararticlesbackground {
+.articlesbackground a,  .populararticlesbackground a, .activitiesbackground a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.populararticlesbackground a {
     display: flex;
     justify-content: space-between;
     background-color: white;
