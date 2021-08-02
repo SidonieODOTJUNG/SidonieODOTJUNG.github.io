@@ -10,6 +10,7 @@
 
 
     <link rel="stylesheet" href="CSS\mobil.css" media="screen and (max-width:730px)">
+    <link rel="stylesheet" href="CSS\tablette.css" media="screen and (max-width:1023px)">
     <link rel="stylesheet" href="CSS\desktop.css" media="screen and (min-width:1024px)">
     
     <script src="https://kit.fontawesome.com/30cce85442.js" crossorigin="anonymous"></script>
@@ -21,20 +22,22 @@
 <body>
     <header>
         <div class="menu">
-            <img src="images\logo\Reservia.svg" alt="logo reservia">
+            <div class="img-reservia">
+                <img src="images\logo\Reservia.svg" alt="logo reservia">
+            </div>
             <!--
             Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
             -->
             <nav class="nav">
                 <ul class="ul-menu">
-                    <li class="li-pages"><a href="" class="pages-choice ">Hébergements</a></li>
-                    <li class="li-pages"><a href="" class="pages-choice">Activités</a></li>
+                    <li class="li-pages hostel-page"><a href="" class="pages-choice">Hébergements</a></li>
+                    <li class="li-pages activities-page"><a href="" class="pages-choice">Activités</a></li>
                 </ul>
-                <a href="" class="pages-choice inscription">S'inscrire</a>
             </nav>
+            <a href="" class="pages-choice inscription">S'inscrire</a>
         </div>
 
-        <div>
+        <div class="header-filters">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
 <!-- faire la barre de recherche  -->
@@ -43,7 +46,7 @@
     Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. 
     En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
 -->
-            <div class="container-filter search-container">
+            <div class="search-container">
                 <!-- placeholder à changer une fois ajax mis en place : Choisissez votre ville... 
                 -->
                 <div class="container-search-item">
@@ -52,7 +55,7 @@
                 
                 <form>
                     <div class="mobil-search-div">
-                        <input type="search" id="search" name="citysearch" class="search-filter" placeholder="Marseille,France" aria-label="Entrez la ville de votre choix pour effectuer une recherche" required/><button class="search-button-phone"><i class="fas fa-search"></i></button><input type="submit" name="buttonsearch" id="button" class="search-button" value="Rechercher">
+                        <input type="search" id="search" name="citysearch" class="search-filter" placeholder="Marseille,France" aria-label="Entrez la ville de votre choix pour effectuer une recherche" required/><input type="submit" name="buttonsearch" id="button" class="search-button" value="Rechercher"><button class="search-button-phone"><i class="fas fa-search"></i></button>
                     </div>
                     
                 </form>
@@ -64,43 +67,45 @@
 Les filtres ne seront pas fonctionnels pour cette version, 
 en revanche, il faut qu’ils changent d’apparence au survol.
 -->
-            <div class="container-filter container-filter-mobil">
+            <div class="container-filter filter-container-mobil">
                 <p class="filters">Filtres</p>
-                <div class="container-inline">
-                    <div class="container-filter-item">
-                        <p class="filter-items"><i class="fas fa-lg fa-money-bill-wave"></i></p> 
+                <div class="container-filter-mobil container-filter-desk">
+                    <div class="container-inline">
+                        <div class="container-filter-item">
+                            <p class="filter-items"><i class="fas fa-lg fa-money-bill-wave"></i></p> 
+                        </div>
+                        <div class="container-filter-p">
+                            <p>&Eacute;conomique</p>
+                        </div>
                     </div>
-                    <div class="container-filter-p">
-                        <p>&Eacute;conomique</p>
+                    <div class="container-inline ">
+                        <div class="container-filter-item">
+                            <p class="filter-items"><i class="fas fa-lg fa-child"></i></p>
+                        </div>
+                        <div class="container-filter-p">
+                            <p>Familial</p>
+                        </div>
                     </div>
-                </div>
-                <div class="container-inline ">
-                    <div class="container-filter-item">
-                        <p class="filter-items"><i class="fas fa-lg fa-child"></i></p>
+                    <div class="container-inline">
+                        <div class="container-filter-item">
+                            <p class="filter-items"><i class="fas fa-lg fa-heart"></i></p>                        
+                        </div>
+                        <div class="container-filter-p">
+                            <p>Romantique</p>
+                        </div>
                     </div>
-                    <div class="container-filter-p">
-                        <p>Familial</p>
-                    </div>
-                </div>
-                <div class="container-inline">
-                    <div class="container-filter-item">
-                        <p class="filter-items"><i class="fas fa-lg fa-heart"></i></p>                        
-                    </div>
-                    <div class="container-filter-p">
-                        <p>Romantique</p>
-                    </div>
-                </div>
-                <div class="container-inline">
-                    <div class="container-filter-item">
-                        <p class="filter-items"><i class="fas fa-lg fa-dog"></i></p>
-                    </div>
-                    <div class="container-filter-p">
-                        <p>Animaux autorisés</p>
+                    <div class="container-inline">
+                        <div class="container-filter-item">
+                            <p class="filter-items"><i class="fas fa-lg fa-dog"></i></p>
+                        </div>
+                        <div class="container-filter-p">
+                            <p>Animaux autorisés</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container-filter">
-                <p><i class="fas fa-info-circle info-icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="container-filter info-container-mobil">
+                <i class="fas fa-lg fa-info-circle info-icon"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
     </header>
@@ -117,8 +122,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue sur une chambre de l'Auberge la Cannnebière">
                     <div class="choicestext">
-                        <h3>Auberge la Cannnebière</h3>
-                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <h3 class="choicestext-mobil">Auberge la Cannnebière</h3>
+                        <p class="choicestext-mobil">Nuit à partir de <strong>25€</strong></p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -131,8 +136,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel du port">
                     <div class="choicestext">
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52€</p>
+                        <h3 class="choicestext-mobil">Hôtel du port</h3>
+                        <p class="choicestext-mobil">Nuit à partir de 52€</p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -145,8 +150,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Les Mouettes">
                     <div class="choicestext">
-                        <h3>Hôtel Les Mouettes</h3>
-                        <p>Nuit à partir de 76€</p>
+                        <h3 class="choicestext-mobil">Hôtel Les Mouettes</h3>
+                        <p class="choicestext-mobil">Nuit à partir de 76€</p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -159,8 +164,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel de la mer">
                     <div class="choicestext">
-                        <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de 46€</p>
+                        <h3 class="choicestext-mobil">Hôtel de la mer</h3>
+                        <p class="choicestext-mobil">Nuit à partir de 46€</p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -173,8 +178,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Vue sur une chambre de l'Auberge Le Panier">
                     <div class="choicestext">
-                        <h3>Auberge Le Panier</h3>
-                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <h3 class="choicestext-mobil">Auberge Le Panier</h3>
+                        <p class="choicestext-mobil">Nuit à partir de <strong>23€</strong></p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -187,8 +192,8 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                 <article class="articlesbackground">
                     <img class="img-choices" src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel chez Amina">
                     <div class="choicestext">
-                        <h3>Hôtel chez Amina</h3>
-                        <p>Nuit à partir de 96€</p>
+                        <h3 class="choicestext-mobil">Hôtel chez Amina</h3>
+                        <p class="choicestext-mobil">Nuit à partir de 96€</p>
                     </div>
                     <div class="choicesstars">
                         <span class="fas fa-star checked"></span>
@@ -201,7 +206,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
             </div>
             <div class="viewmore">
                 <!-- transformer en lien si besoin dans projet-->
-                <h3>Afficher plus</h3>
+                <h3 class="viewmore-mobil">Afficher plus</h3>
             </div>
         </div>
         <div class="sectionsbackground sectionsbackground2">

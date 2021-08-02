@@ -1,0 +1,312 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0 2rem 0 2rem ;
+}
+
+.checked, .blue {
+    color : #0065FC;
+}
+
+.starbackground  {
+    color : #F2F2F2;
+}
+
+.articlesbackground {
+    background-color: white;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+    width: 40%;
+    height: 19rem;
+    border: solid 5px white;
+    border-radius:  35px;
+    box-shadow: 6px 6px 12px #c7c5c5;
+}
+
+.populararticlesbackground {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+    width: 90%;
+    height: 12rem;
+    border: solid 5px white;
+    border-radius:  35px;
+    box-shadow: 6px 6px 12px #c7c5c5;
+}
+
+.sectionsbackground2 {
+    background-color: #f2f2f2;
+}
+
+.container-filter, .search-container {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.search-container {
+    margin-left: 7rem;
+}
+
+.filter-container-mobil{
+    flex-direction: column;
+}
+
+.container-filter-mobil{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-inline {
+    border: 1mm solid #f2f2f2;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0.5rem 0.5rem 0 ;
+    padding-right: 4rem;
+    position: relative;
+    z-index: 3;
+}
+
+.container-activities{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Mise en forme barre de recherche et filtres */
+
+.search-container{
+    margin-bottom: 1.5rem;
+}
+
+.container-search-item {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0 0 15px ;
+    background-color: #f2f2f2;
+}
+
+.search-filter, .search-button, .filters{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search-filter{
+    height: 100%;
+    width: 230px;
+    border: solid 0.5mm #f2f2f2;
+    color: black;
+    padding: 0.9rem 0.5rem 0.9rem 1rem;
+}
+
+.search-button{
+    width: 150px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+
+.search-button-phone{
+    visibility: hidden;
+}
+
+.container-filter-item {
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color:#0065FC ;
+    background-color: #DEEBFF;
+    position: absolute;
+    z-index: 1;
+    left: -2px;
+    top: -2px;
+}
+
+.filter-items{
+    padding-top: 3px;
+}
+
+.container-filter-p {
+    margin: 0 0.5rem 0 0.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    left: 3.5rem;
+}
+
+.info-icon {
+    align-self: center;
+    margin-right: 1rem;
+    color:#0065FC ;
+}
+
+.img-popular{
+    width: 43%;
+    border-radius: 35px 0 0 35px;
+    /* permet de redimmentionner l'image tout en gardant les ratios */
+    object-fit: cover; 
+}
+
+.img-choices{
+    width: 100%;
+    height: 10rem;
+    border-radius:35px 35px 0 0;
+}
+
+.choicestext, .choicesstars{
+    margin-left: 1rem;
+}
+
+
+
+/* flexbox hebergement et populaires*/
+
+.container-articles{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.container-detail-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.populartitle{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto auto auto 2rem;
+}
+
+.chart-line-phone{
+    margin-top: 1.7rem;
+}
+
+.detailarticlestitle, .detailactivitytitle{
+    width: 90%;
+    margin: 3rem auto auto auto;
+}
+
+.viewmore{
+    width: 90%;
+    margin: auto;
+}
+
+.secondsectionpopulararticle{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popularstars{
+    margin-bottom: 1rem;
+}
+
+/* flexbox activités à Marseille */
+.activitiesarticles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.activitiesbackground {
+    background-color: white;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+    border-radius:  35px;
+    box-shadow: 8px 8px 9px #F2F2F2;
+}
+
+.img-activities{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px 35px 0 0;
+    height: 150px;
+}
+
+.activities60-40, .activities50-50{
+    display: flex;
+    flex-direction: column;
+}
+
+.activitiestitle{
+    margin-left: 1rem;
+}
+
+/* flexbox footer */
+
+footer{
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.footer{
+    width: 40%;
+    margin-left: 2rem;
+}
+
+/* menu */
+
+.menu{
+    display: flex;
+}
+
+.img-reservia{
+margin-top: 1rem;
+}
+
+.nav{
+    display: flex;
+    flex: 1;
+}
+
+.ul-menu{
+    list-style-type: none;
+    display: flex;
+    margin: auto 20px auto auto ;
+}
+
+.li-pages{
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.pages-choice{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.inscription{
+    color: #0065FC;
+    font-weight: bold;
+    padding: 2rem 0 0 1rem;
+}
+
+.li-pages:active, .li-pages:focus{
+    border-top: 2px solid #0065FC;
+}
+
+.li-pages:active a, .li-pages:focus a{
+    color: #0065FC;
+}
+
