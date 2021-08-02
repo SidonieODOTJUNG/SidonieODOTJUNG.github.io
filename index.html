@@ -9,29 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet"> 
 
 
-    <link rel="stylesheet" href="CSS\mobil.css" media="screen and (max-width:730px)">
-    <link rel="stylesheet" href="CSS\tablette.css" media="screen and (min-width:731px) and (max-width:1023px)">
-    <link rel="stylesheet" href="CSS\desktop.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="CSS/mobil.css" media="screen and (max-width:730px)">
+    <link rel="stylesheet" href="CSS/tablette.css" media="screen and (min-width:731px) and (max-width:1023px)">
+    <link rel="stylesheet" href="CSS/desktop.css" media="screen and (min-width:1024px)">
     
     <script src="https://kit.fontawesome.com/30cce85442.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
-<!--penser à tester mon code sur w3c -->
+<!--check OK sur w3c -->
 
 <body>
     <header>
         <div class="menu">
             <div class="img-reservia">
-                <img src="images\logo\Reservia.svg" alt="logo reservia">
+                <img src="images/logo/Reservia.svg" alt="logo reservia">
             </div>
             <!--
             Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
             -->
             <nav class="nav">
                 <ul class="ul-menu">
-                    <li class="li-pages hostel-page"><a href="" class="pages-choice">Hébergements</a></li>
-                    <li class="li-pages activities-page"><a href="" class="pages-choice">Activités</a></li>
+                    <li class="li-pages hostel-page"><a href="#herbergement" class="pages-choice">Hébergements</a></li>
+                    <li class="li-pages activities-page"><a href="#activities" class="pages-choice">Activités</a></li>
                 </ul>
             </nav>
             <a href="" class="pages-choice inscription">S'inscrire</a>
@@ -112,15 +112,15 @@ en revanche, il faut qu’ils changent d’apparence au survol.
 <!--
     Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
 -->
-    <section class="container-articles">
+    <section class="container-articles" id="herbergement">
         <div class="sectionsbackground sectionsbackground1">
-            <div class="detailarticlestitle">
+            <div class="detailarticlestitle"></div>
                 <h2>Hébergements à Marseille</h2>
             </div>
             
             <div class="container-detail-articles">
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue sur une chambre de l'Auberge la Cannnebière">
+                    <img class="img-choices" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue sur une chambre de l'Auberge la Cannnebière">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Auberge la Cannnebière</h3>
                         <p class="choicestext-mobil">Nuit à partir de <strong>25€</strong></p>
@@ -134,7 +134,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel du port">
+                    <img class="img-choices" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel du port">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Hôtel du port</h3>
                         <p class="choicestext-mobil">Nuit à partir de 52€</p>
@@ -148,7 +148,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Les Mouettes">
+                    <img class="img-choices" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Les Mouettes">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Hôtel Les Mouettes</h3>
                         <p class="choicestext-mobil">Nuit à partir de 76€</p>
@@ -162,7 +162,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel de la mer">
+                    <img class="img-choices" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel de la mer">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Hôtel de la mer</h3>
                         <p class="choicestext-mobil">Nuit à partir de 46€</p>
@@ -176,7 +176,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Vue sur une chambre de l'Auberge Le Panier">
+                    <img class="img-choices" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Vue sur une chambre de l'Auberge Le Panier">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Auberge Le Panier</h3>
                         <p class="choicestext-mobil">Nuit à partir de <strong>23€</strong></p>
@@ -190,7 +190,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="articlesbackground">
-                    <img class="img-choices" src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel chez Amina">
+                    <img class="img-choices" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel chez Amina">
                     <div class="choicestext">
                         <h3 class="choicestext-mobil">Hôtel chez Amina</h3>
                         <p class="choicestext-mobil">Nuit à partir de 96€</p>
@@ -216,7 +216,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
             </div>
             <div class="container-detail-articles">
                 <article class="populararticlesbackground">
-                    <img class="img-popular" src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Le soleil du matin">
+                    <img class="img-popular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Le soleil du matin">
                     <div class="secondsectionpopulararticle">
                         <div>
                             <h3>Hôtel Le soleil du matin</h3>
@@ -232,7 +232,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="populararticlesbackground ">
-                    <img class="img-popular" src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Vue sur une chambre des chambres d'hôtes : Au coeur de l'eau">
+                    <img class="img-popular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Vue sur une chambre des chambres d'hôtes : Au coeur de l'eau">
                     <div class="secondsectionpopulararticle">
                         <div>
                             <h3>Au cœur de l'eau <br>Chambres d'hôtes</h3>
@@ -248,7 +248,7 @@ en revanche, il faut qu’ils changent d’apparence au survol.
                     </div>
                 </article>
                 <article class="populararticlesbackground ">
-                    <img class="img-popular" src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Tout bleu et blanc">
+                    <img class="img-popular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Vue sur une chambre de l'Hôtel Tout bleu et blanc">
                     <div class="secondsectionpopulararticle">
                         <div>
                             <h3>Hôtel Tout bleu et blanc</h3>
@@ -267,46 +267,46 @@ en revanche, il faut qu’ils changent d’apparence au survol.
         </div>
     </section>
 
-    <section class="container-activities">
+    <section class="container-activities" id="activities">
         <div class="detailactivitytitle">
             <h2>Activités à Marseille</h2>
         </div>
         <div class="activitiesarticles">
             <article class="activitiesbackground">
-                <img class="img-activities img100" src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port de Marseille">
+                <img class="img-activities img100" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port de Marseille">
                 <div class="activitiestitle">
                     <h3>Vieux port</h3>
                 </div>
             </article>
             <div class="activities60-40">
                 <article class="activitiesbackground activitiesheight60">
-                    <img class="img-activities img60" src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <img class="img-activities img60" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                     <div class="activitiestitle">
                         <h3>Fort de Pomègues</h3>
                     </div>
                 </article>
                 <article class="activitiesbackground activitiesheight40">
-                    <img class="img-activities img40" src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                    <img class="img-activities img40" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
                     <div class="activitiestitle">
                         <h3>Îles du Frioul</h3>
                     </div>
                 </article>
             </div>
             <article class="activitiesbackground">
-                <img class="img-activities img100" src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nationnal des Calanques de Marseille">
+                <img class="img-activities img100" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nationnal des Calanques de Marseille">
                 <div class="activitiestitle">
                     <h3>Parc Nationnal des Calanques</h3>
                 </div>
             </article>
             <div class="activities50-50">
                 <article class="activitiesbackground activitiesheight50">
-                    <img class="img-activities img50" src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <img class="img-activities img50" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                     <div class="activitiestitle">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </article>
                 <article class="activitiesbackground activitiesheight50">
-                    <img class="img-activities img50" src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <img class="img-activities img50" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                     <div class="activitiestitle">
                         <h3>Parc Longchamp</h3>
                     </div>
