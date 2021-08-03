@@ -239,6 +239,10 @@ justify-content: space-around;
     height: 40rem;
 }
 
+.globalactivities{
+    width: 25%;
+}
+
 .activitiesbackground a{
     background-color: white;
     margin: 0.5rem 0.5rem 1.5rem 0.5rem;
@@ -263,7 +267,7 @@ justify-content: space-around;
 }
 
 .img-activities{
-    width: 20rem;
+    width: 100%;
     object-fit: cover;
     border-radius: 35px 35px 0 0;
 }

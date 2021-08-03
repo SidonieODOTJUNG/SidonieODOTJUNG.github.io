@@ -351,11 +351,11 @@ footer{
     margin: 1rem 1rem auto auto;
 }
 
-.li-pages:active, .li-pages:focus{
+.li-pages:active{
     border-bottom: 3px solid #0065FC;
 }
 
-.li-pages:active a, .li-pages:focus a{
+.li-pages:active a{
     color: #0065FC;
 }
 
