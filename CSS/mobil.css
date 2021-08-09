@@ -313,7 +313,7 @@ footer{
 
 .nav{
     align-self: flex-end;
-    width: 410px;
+    width: 100%;
     z-index: 1;
     position: absolute;
 }
@@ -328,14 +328,8 @@ footer{
 .li-pages{
     text-align: center;
     border-bottom: 3px solid #f2f2f2;
-}
-
-.hostel-page{
-    padding: 1rem 2.7rem 1rem 2.7rem;
-}
-
-.activities-page{
-    padding: 1rem 4.3rem 1rem 4.3rem;
+    padding: 1rem;
+    width: 50%;
 }
 
 .pages-choice{
@@ -350,6 +344,8 @@ footer{
     font-weight: bold;
     margin: 1rem 1rem auto auto;
 }
+
+
 
 .li-pages:active{
     border-bottom: 3px solid #0065FC;
