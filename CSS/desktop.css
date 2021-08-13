@@ -187,6 +187,10 @@ header {
     justify-content: space-evenly;
 }
 
+.container-detail-articles-third {
+    flex-direction: column;
+}
+
 .sectionsbackground1{
  width: 70%;
  padding-top: 2rem;
