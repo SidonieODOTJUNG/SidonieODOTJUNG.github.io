@@ -188,7 +188,7 @@ header {
 }
 
 .container-detail-articles-third {
-    flex-direction: columngit;
+    flex-direction: column;
 }
 
 .sectionsbackground1{
