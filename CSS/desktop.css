@@ -21,7 +21,7 @@ header {
     margin: 0.5rem 0.5rem 1.5rem 0.5rem;
     width: 30%;
     height: 19rem;
-    border: solid 5px white;
+    padding: 5px;
     border-radius:  35px;
     box-shadow: 6px 6px 12px #c7c5c5;
 }
@@ -39,7 +39,7 @@ header {
     margin: 0.5rem 0.5rem 1.5rem 0.5rem;
     width: 93%;
     height: 12rem;
-    border: solid 5px white;
+    padding: 5px;
     border-radius:  35px;
     box-shadow: 6px 6px 12px #c7c5c5;
 }

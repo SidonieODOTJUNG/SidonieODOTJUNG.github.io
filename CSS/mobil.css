@@ -39,7 +39,7 @@ header {
     background-color: white;
     margin: auto auto 1rem auto;
     height: 10rem;
-    border: solid 5px white;
+    padding: 5px;
     border-radius:  35px;
     box-shadow: 6px 6px 12px #c7c5c5;
 }
